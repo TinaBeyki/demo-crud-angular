@@ -1,0 +1,10 @@
+<!--
+<h2>Remove</h2>
+<form [formGroup]="userForm" (ngSubmit)="deleteUser()">
+  <label for = "id">id:</label>
+<input id= "id"type = "text" formControlName="id">
+  <button>Remove</button>
+</form>
+-->
+<input type = "text" [(ngModel)]="this.id">
+<button (click)="deleteUser()">Remove</button>

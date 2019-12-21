@@ -1,0 +1,13 @@
+<!--<p>find-by-id works!</p>
+<form [formGroup]="userGroup" (ngSubmit)="getUserById()">
+  <label for = "id">Id:</label>
+  <input id = "id" type = "text" formControlName="id">
+  <button>Find</button>
+
+
+</form>-->
+<table>
+  <tr *ngFor="let user of user">
+    <td>{{user.name}}</td>
+    <td>{{user.surname}}</td>
+</table>
