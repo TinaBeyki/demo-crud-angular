@@ -23,14 +23,11 @@ export class UserServiceService {
   }
 
   save(user): any {
-    this.http.post('http://localhost:8081/user', user);
-  }
- /* save(user): any {
     this.http.post('http://localhost:8081/user', user)
       .pipe().subscribe(data => console.log(data)
       , error => console.log(error)
     );
-  }*/
+  }
 
   update(id, user) {
     this.http.post('http://localhost:8081/user/update/'+ id, user)
